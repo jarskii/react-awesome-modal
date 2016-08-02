@@ -8,7 +8,7 @@ export default class Modal extends Component {
         this.setSize(effect);
         this.state = {
             visible : props.visible,
-            style : style[effect]
+            style : props.style || style[effect]
         }
     }
 
